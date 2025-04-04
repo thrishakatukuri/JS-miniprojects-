@@ -16,7 +16,7 @@ let age = "";
 
    count++;
 
-   if(count>=10){ //{(count=1)===(5counts) coz, in count 1, 5times it calls the char indexes}.
+   if(count>=15){ //{(count=1)===(5counts) coz, in count 1, 5times it calls the char indexes}.
     let btn = document.getElementById('btn')
     btn.disabled = true;
     btn.innerText = "disabled";
