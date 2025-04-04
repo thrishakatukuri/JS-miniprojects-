@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form Vadlidation</title>
+</head>
+<body>
+    <center>
+    <form id="captchaForm" action="https://www.youtube.com/" onsubmit="return validation()">
+    <center>
+        <h1>🎓<span>Form Validation</span>🎓</h1><br><br>
+
+        <label for="">userName:  
+            <input type="text" id="user"  required placeholder="Enter your userName"><br>
+        </label><br>
+        <label for="">password: 
+            <input type="text"  id="pass"  required placeholder="Enter your Password"><br>
+        </label><br>
+        <label for="">AdharCard: 
+            <input type="text"  id="adhar"  required placeholder="Enter your Adhar num"><br>
+        </label><br>
+        <label for="">PanCard: 
+            <input type="text"  id="pan"  required placeholder="Enter your PanCard num"><br>
+        </label><br>
+        <label for="">Contact: 
+            <input type="text"  id="contact"  required placeholder="Enter your Contact"><br>
+        </label><br>
+        <table>
+            <tr>
+                <th> <button id="refreshBtn">📌</button></th>
+                <th><div id="captcha"></div></th>
+                <th><input type="text" id="captchaenter"required></th>
+            </tr>
+        </table><br><br><br>
+        <input type="submit" value="submit"><br>
+    </center>
+    </form>
+</center>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
