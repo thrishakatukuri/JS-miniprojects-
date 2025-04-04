@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quotes</title>
+</head>
+<style>
+    body{
+        width:100%;
+        height:100%;
+        background-color: plum;
+    }
+ button{
+    position:absolute;
+    top:100px;
+    left:800px;
+    width:100px;height:40px;
+    border:1px solid plum;
+    box-shadow: 5px 5px plum;
+    background-color:whitesmoke;
+        cursor: pointer;
+        border-radius: 20px;
+ }
+ div{
+    position: relative;
+    margin-top:150px;
+ }
+</style>
+<body>
+    <center>
+        <h1>QUOTES📝</h1>
+        <div>
+        <p id="quoteText">Loading quote...</p>
+        <p id="authorText"></p>
+        <button id="btn">ckick</button>
+    </div>
+    </center>
+
+    <script>
+        document.getElementById('btn').addEventListener('click',()=> {
+            function randomQuotes(){
+            let randomNumbers = Math.floor(Math.random()*100);
+            // console.log(randomNumbers);
+            let quotes = fetch('https://gist.githubusercontent.com/nasrulhazim/54b659e43b1035215cd0ba1d4577ee80/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json')
+            .then((response)=>{return response.json()})
+
+            .then((data) => {
+          const quotesArray = data.quotes;
+          const randomIndex = Math.floor(Math.random() * quotesArray.length);
+          const quote = quotesArray[randomIndex].quote;
+          const author = quotesArray[randomIndex].author;
+
+          document.getElementById("quoteText").textContent = `"${quote}"`;
+          document.getElementById("authorText").textContent = `— ${author}`;
+        })
+        }randomQuotes()
+        })
+       
+    </script>
+</body>
+</html>

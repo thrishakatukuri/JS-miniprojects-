@@ -1,0 +1,37 @@
+h1{
+    background: linear-gradient(rgb(10, 10, 10),plum,black);
+    background-clip: text;
+    color:transparent;
+    margin: 50px;
+    font-size: 3rem;
+}
+#captcha{
+    width:300px;
+    height:50px;
+    border:1px solid plum;
+    box-shadow: 5px 5px 5px plum;
+    border-radius: 20px;
+    color:black;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px;
+    font-size: 2rem;
+}
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px plum;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+#btn:focus{
+    outline: none;
+    border:1px solid plum;
+    cursor: pointer;
+}
