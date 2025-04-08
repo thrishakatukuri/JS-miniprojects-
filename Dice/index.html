@@ -4,65 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roll Game</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            background-color:black;
-        }
-        .dice-container {
-            display: flex;
-            justify-content: center;
-            column-gap: 50px;
-            margin-top: 20px;
-        }
-        h1{
-            margin:100px 0px 0px 20px;
-            font-size: 3rem;
-            color:plum;
-        }
-        button{
-            width:200px;
-            height:50px;
-            
-            font-size: 2rem;
-            border-radius: 50px;
-            margin:10px 0px 0px 0px;
-            cursor: pointer;
-        }
-        .dice {
-            font-size: 5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        #rolling {
-            animation: spin 0.2s 2 linear;
-        }
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        #result {
-            font-size: 1.5em;
-            margin-top: 50px;
-            font-weight: bold;
-            color:plum;
-        }
-        #dice1,#dice2{
-            width:150px;
-            height:150px;
-            background:linear-gradient(whitesmoke,plum);
-            border-radius: 50%;
-            border:1px solid plum;
-            box-shadow: 5px 5px 5px plum;
-            outline: none;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
+    
 </head>
 <body>
     <h1>🎲 Dice Roll Game 🎲</h1>
-
 
     <div class="dice-container">
         <p id="dice1" class="dice">🎲</p>
@@ -72,9 +18,7 @@
     <button id="rollButton">Roll Dice</button>
     <p id="result"></p>
 
-
-
-    <script>
+<script>
         let dice = ["⚀","⚁","⚂","⚃","⚄","⚅"];
 
         document.getElementById("rollButton").onclick = () => {
