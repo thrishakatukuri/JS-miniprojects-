@@ -2,13 +2,6 @@ body{
     height:100%;
     background-color: black;
     color:white;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: center;
-    gap: 3rem;
-    margin:0px;
-    padding:0px;
-    border:0px; */
     padding: 20px;
     overflow-x: hidden;
 }
@@ -27,7 +20,6 @@ section{
     margin:0px;
     padding:0px;
     border:0px;
-    /* background-color: brown; */
 }
 #products{
     transition: 2s infinite ease-in;
@@ -62,7 +54,6 @@ h1,h2,h3,h4{
 }
 span{
     background: linear-gradient(rgb(251, 204, 212),rgb(235, 182, 182));
-    /* color:rgb(251, 204, 212); */
     background-clip: text;
     color:transparent;
 }
