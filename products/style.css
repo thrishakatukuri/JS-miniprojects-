@@ -2,6 +2,24 @@ body{
     height:100%;
     background-color: black;
     color:white;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 3rem;
+    margin:0px;
+    padding:0px;
+    border:0px; */
+    padding: 20px;
+    overflow-x: hidden;
+}
+#mainhead{
+    margin:50px 0px;
+    font-size: 3rem;
+    color: plum;
+    text-shadow: 5px 5px 5px plum;
+}
+section{
+    width:100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
@@ -9,8 +27,7 @@ body{
     margin:0px;
     padding:0px;
     border:0px;
-    padding: 20px;
-    overflow-x: hidden;
+    /* background-color: brown; */
 }
 #products{
     transition: 2s infinite ease-in;

@@ -1,0 +1,44 @@
+    h1{
+        margin-top: 100px;
+    }
+    #enter{
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    #fruitInput{
+        width:250px;
+        height:25px;
+        border-radius: 20px;
+        border: 1px solid plum;
+        box-shadow: 5px 5px 5px plum;
+        transition: 2s infinite ease-out;
+    }
+    #submit{
+        width:100px;
+        height:25px;
+        border-radius: 100px;
+        border: 1px solid plum;
+        box-shadow: 5px 5px 5px plum;
+        cursor: pointer;
+        transition: infinite 2s ease-out;
+    }
+    /* #submit:hover{
+        transform: scale(1.1);
+        outline:none;
+        border:1px solid green;
+    } */
+    #fruitInput:focus{
+        transform: scale(1.1);
+        outline:none;
+        border:1px solid green;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:40px;
+        font-size: 2rem;
+    }
