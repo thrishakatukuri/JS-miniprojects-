@@ -8,7 +8,6 @@ async function productsData() {
 
     renderProducts(allProducts);
 
-    // Event listeners for filtering
     document.getElementById('priceRange').addEventListener('input', filterData);
     document.getElementById('four').addEventListener('change', filterData);
     document.getElementById('three').addEventListener('change', filterData);
