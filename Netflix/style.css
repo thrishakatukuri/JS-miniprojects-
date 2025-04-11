@@ -1,0 +1,109 @@
+body{
+    color:white;
+    background-color:rgb(238, 141, 170);
+    background: url('https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:30px 0px; 
+    background-color: rgba(0, 0, 0, 0.69);
+    padding:20px;
+    font-size:1.4rem;
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(black,red);
+    background-clip: text;
+    color:transparent;
+    filter: drop-shadow(10px 10px 10px plum);
+    margin:5px 0px;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    column-gap: 0px;
+    width:550px;
+    height:30px;
+}
+#movieInput{
+     /* border-radius:20px; */
+     border:1px solid plum;
+     /* box-shadow: 5px 5px 5px plum; */
+     padding: 5px 15px;
+     outline:none;
+     width:100%;
+     height:100%;
+     font-size: 1.2rem;
+}
+#movieInput:focus{
+    border: 1px solid green;
+}
+#btn{
+    /* border-radius:20px; */
+    /* box-shadow: 5px 5px 5px plum; */
+    width:50%;
+    font-size: 1.2rem;
+     height:140%;
+     border:1px solid plum;
+     padding: 5px 15px;
+     outline:none;
+     background-color: red;
+}
+#container{
+    width:600px;
+    height:550px;
+    border-radius: 20px;
+    background-color: rgba(250, 246, 246, 0.7);
+    box-shadow: 5px 5px 5px white;
+    color:white;
+    padding:10px;
+    display:none;
+}
+img{
+    width:250px;
+    height:300px;
+    border-radius: 20px;
+    margin-right: 20px;
+    display:flex;
+    justify-content: left;
+}
+#data{
+    width:100%;
+    display: flex;
+    column-gap: 30px;
+    padding: 10px;
+}
+p{
+    display:flex;
+    justify-content: left;
+    color:black;
+
+    font-size: 1.3rem;
+}
+span{
+    font-size: 1.5rem;
+    color:black;
+    font-weight: bolder;
+
+}
+mark{
+    color:black;
+}
+marquee{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
